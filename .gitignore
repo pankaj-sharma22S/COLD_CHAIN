@@ -1,0 +1,77 @@
+# =======================================================================
+# Cold Chain Logistics Control Center - Root .gitignore
+# =======================================================================
+
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+.env.*.local
+!.env.example
+frontend/.env
+frontend/.env.local
+!frontend/.env.example
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Python Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Testing & Type Checking ---
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node.js & Frontend Artifacts ---
+node_modules/
+*/node_modules/
+frontend/dist/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vite/
+
+# --- Local Vector Databases & Runtime Logs ---
+sop/chroma_db/
+chroma.sqlite3
+*.log
+logs/
+
+# --- Operating System & Editor Artifacts ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
